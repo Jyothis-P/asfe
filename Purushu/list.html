@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+
+    <!-- Title Page-->
+    <title>PurushuBhaiMain</title>
+
+    <!-- Main CSS-->
+    <link href="css/list.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="row">
+                <img class="logo" src="images/logo.jpg" height="150px" width="150px">
+                <div class="col">
+                    <h1 class="head-text">Association of Safety and Fire Engineers</h1>
+                    <h2 class="head-text">Division of Safety and Fire Engineering</h2>
+                    <h3 class="head-text">School of Engineering, CUSAT</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="row">
+                <h3 class="m-3">Search</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="input-group my-2">
+                        <label class="label m-2">Name</label>
+                        <input class="input--style-4" type="text" name="first_name" id="name">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group my-2">
+                        <label class="label m-2">Batch</label>
+                        <input class="input--style-4" type="text" name="first_name" id="batch">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group my-2">
+                        <label class="label m-2">Company</label>
+                        <input class="input--style-4" type="text" name="first_name" id="company">
+                    </div>
+                </div>
+                <div class="col-md-3 px-5">
+                    <button class="btn--blue btn--radius-2 btn" id="search">Search</button>
+                    <div class="loader" id="loader"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container" id="results">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="person">
+                        <img class="pic" src="images/logo.jpg">
+                        <div class="name">Amal Purushu</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="person">
+                        <img class="pic" src="images/logo.jpg">
+                        <div class="name">Amal Purushu</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="person">
+                        <img class="pic" src="images/logo.jpg">
+                        <div class="name">Amal Purushu</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="person">
+                        <img class="pic" src="images/logo.jpg">
+                        <div class="name">Amal Purushu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container" id="register">
+            <div class="row">
+                <div class="col">
+                    <button class="btn--blue btn--radius-2 btn file-submit">Register</button>
+                    <div class="loader" id="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- Main JS-->
+    <script src="js/list.js"></script>
+
+</body>
+
+</html>
