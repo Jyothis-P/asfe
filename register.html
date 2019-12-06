@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>SidBhaiMain</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/reg.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+                    <img id="pic" width="200px">
+                    <div id="filesubmit">
+                        <input type="file" class="file-select" accept="image/*" />
+                        <div class="uploadrow row">
+                            <button class="btn--blue btn--radius-2 btn file-submit">Upload image</button>
+                            <div class="loader" id="loader"></div>
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Name</label>
+                        <input class="input--style-4" type="text" name="first_name" id="name">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Phone number</label>
+                        <input class="input--style-4" type="number" name="phone" id="phone">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Email</label>
+                        <input class="input--style-4" type="email" name="email" id="email">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Address</label>
+                        <input class="input--style-4" type="text" name="address" id="address">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Batch (Year of admission)</label>
+                        <input class="input--style-4" type="number" name="batch" id="batch">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Course</label>
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="course" id="course">
+                                <option disabled="disabled" selected="selected">Choose option</option>
+                                <option>B-Tech</option>
+                                <option>M-Tech</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Company</label>
+                        <input class="input--style-4" type="text" name="company" id="company">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Company Location</label>
+                        <input class="input--style-4" type="text" name="location" id="location">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Designation</label>
+                        <input class="input--style-4" type="text" name="designation" id="desig">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Higher Studies <i>(optional)</i> </label>
+                        <input class="input--style-4" type="text" name="studies" id="higher">
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Special achievements <i>(optional)</i> </label>
+                        <input class="input--style-4" type="text" name="achievements" id="achievments">
+                    </div>
+                    <div class="p-t-15">
+                        <div class="row">
+                            <button class="btn btn--radius-2 btn--blue" id="submit">Submit</button>
+                            <div class="loader-submit" id="submit-loader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>
